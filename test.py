@@ -1,6 +1,11 @@
 ###
 # The point of this exercise is to do this and this.
+# 
+# Now there is more exercise description.
 #
+# Yeah!
+# 
+# Yet another change!
 
 # Your Code Here
 def div(a, b):
