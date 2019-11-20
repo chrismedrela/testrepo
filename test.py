@@ -3,6 +3,8 @@
 #
 
 # Your Code Here
+def div(a, b):
+    return a/b
 
 # Expected Behaviour
 print(div(3, 2))
