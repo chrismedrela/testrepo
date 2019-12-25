@@ -24,8 +24,7 @@ try:
 except ImportError:
     import mock
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# Essentials
+# %%%%%%%%%%%%%%%%%%%%%%%  Essentials
 
 m = mock.Mock()
 m.return_value = 42
@@ -37,15 +36,13 @@ from matplotlib import pyplot as plt
 plt.plot([2, 3, 1])
 plt.show()
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# Raising exceptions
+# %%%%%%%%%%%%%%%%%%%%%%%  Raising exceptions
 
 m = mock.Mock()
 m.side_effect = KeyError
 # print(m())  # ==> KeyError
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# Returning Multiple Values
+# %%%%%%%%%%%%%%%%%%%%%%%  Returning Multiple Values
 
 m = mock.Mock()
 m.side_effect = [1, 2, KeyError, 3]
@@ -53,8 +50,7 @@ print(m())  # ==> 1
 print(m())  # ==> 2
 # print(m())  # ==> KeyError
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# Mocking with Lambda
+# %%%%%%%%%%%%%%%%%%%%%%%  Mocking with Lambda
 
 ### Analogy of XYZ
 
@@ -73,8 +69,7 @@ m = mock.Mock()
 m.side_effect = my_lambda
 print(m(5))
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# Assertions
+# %%%%%%%%%%%%%%%%%%%%%%% Assertions
 
 m = mock.Mock()
 m(10)
@@ -84,8 +79,7 @@ m.assert_called_with(20)
 m.assert_any_call(10)
 # m.assert_not_called()  # ==> AssertionError
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# Other Notable Attributes
+# %%%%%%%%%%%%%%%%%%%%%%% Other Notable Attributes
 
 m = mock.Mock()
 m(5)
@@ -101,8 +95,7 @@ assert m.call_args_list == [
 
 from matplotlib import pyplot as plt
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# Exercise: Mocking Flask App
+# %%%%%%%%%%%%%%%%%%%%%%% Exercise: Mocking Flask App
 
 # Write two tests for this simple app, one for GET request (when the website is
 # accessed for the first time and we should display a form) and one for POST
