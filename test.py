@@ -74,8 +74,8 @@ m.assert_called_with(20)
 m.assert_any_call(10)
 # m.assert_not_called()  # ==> AssertionError
 
-# ---------------------------------------------------------------------------
 # 7. Other Notable Attributes
+# ---------------------------------------------------------------------------
 
 m = mock.Mock()
 m(5)
