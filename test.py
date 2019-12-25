@@ -8,6 +8,7 @@
 # - jfhjd kahfjkdlhsafjkl a sjdkflhdjsaklf hjdklsa fd ahjfkl dahjklf dhjaklf
 #   dhjkasl fdhjksal fdhjksla fdhjkalfhdjkla fhdlsa
 
+### ---------------
 ### 1. Installation
 ### ---------------
 
@@ -20,6 +21,7 @@ try:
 except ImportError:
     import mock
 
+### -------------
 ### 2. Essentials
 ### -------------
 
@@ -29,6 +31,7 @@ print(m(84, foo=3))  # ==> 42
 m.assert_called_once_with(84, foo=3)
 assert m.call_args == mock.call(84, foo=3)
 
+### ---------------------
 ### 3. Raising exceptions
 ### ---------------------
 
@@ -36,6 +39,7 @@ m = mock.Mock()
 m.side_effect = KeyError
 # print(m())  # ==> KeyError
 
+### ----------------------------
 ### 4. Returning Multiple Values
 ### ----------------------------
 
@@ -45,6 +49,7 @@ print(m())  # ==> 1
 print(m())  # ==> 2
 # print(m())  # ==> KeyError
 
+### ----------------------
 ### 5. Mocking with Lambda
 ### ----------------------
 
@@ -63,6 +68,7 @@ m = mock.Mock()
 m.side_effect = my_lambda
 print(m(5))
 
+### -------------
 ### 6. Assertions
 ### -------------
 
@@ -74,6 +80,7 @@ m.assert_called_with(20)
 m.assert_any_call(10)
 # m.assert_not_called()  # ==> AssertionError
 
+### ---------------------------
 ### 7. Other Notable Attributes
 ### ---------------------------
 
