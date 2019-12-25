@@ -1,6 +1,13 @@
 # Mocking functions
 # =================
 
+# Mocking is useful when you want to impress other people or isolate your code
+# from external sources like:
+#
+# - External databases
+# - jfhjd kahfjkdlhsafjkl a sjdkflhdjsaklf hjdklsa fd ahjfkl dahjklf dhjaklf
+#   dhjkasl fdhjksal fdhjksla fdhjkalfhdjkla fhdlsa
+
 # 1. Installation
 # ---------------
 
