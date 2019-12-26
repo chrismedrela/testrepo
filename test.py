@@ -108,5 +108,3 @@ from matplotlib import pyplot as plt
 # Your Notes Here
 
 # %%%%%%%%%%%%%%%%%%%%%% Even More Here
-
-# bla bla
